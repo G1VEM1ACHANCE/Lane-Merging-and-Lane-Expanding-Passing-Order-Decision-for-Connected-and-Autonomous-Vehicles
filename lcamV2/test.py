@@ -84,7 +84,7 @@ class Vehicle:
 
 def printPos(A):
     for i in range(len(A)):
-        print(A[i].ID,A[i].position,A[i].lane,A[i].ifChange,A[i].position)
+        print(A[i].ID,A[i].position,A[i].lane,A[i].ifChange,A[i].passingOrder)
     print("\n")
 
 
@@ -167,7 +167,7 @@ def move(A,B,t,last_vehicle):
         A[0].scheduled_enter = t
         behavior['scheduled_enter'] = A[0].scheduled_enter
         behavior['waiting'] = A[0].waiting
-        print(A[0].waiting,A[0].ID,A[0].scheduled_enter)
+        print(A[0].waiting,A[0].ID,A[0].scheduled_enter,A[0].ifChange,A[0].passingOrder)
         last_vehicle = copy.deepcopy(A[0])
         output.append(behavior)
         A.pop(0)
@@ -185,7 +185,7 @@ def move(A,B,t,last_vehicle):
         B[0].scheduled_enter = t
         behavior['scheduled_enter'] = B[0].scheduled_enter
         last_vehicle = copy.deepcopy(B[0])
-        print(B[0].waiting,B[0].ID,B[0].scheduled_enter)
+        print(B[0].waiting,B[0].ID,B[0].scheduled_enter,B[0].ifChange,B[0].passingOrder)
         output.append(behavior)
         B.pop(0)
     return last_vehicle
@@ -224,7 +224,7 @@ def lane_change_merge(A,B):
     for i in range(200):
         pos_init(A,i)
         pos_init(B,i)
-        # if (B[1].position == 22):
+        # if (B[10].position == 22):
         #     printPos(A)
         #     printPos(B)
         #printPos(temp)

@@ -70,8 +70,8 @@ def getInput(Tsafe = 1, density = 8):    #同車道車arrival time保證不重�
     print_vehicles(A,B)
     return A, B
 
-def deal_input():
-    f = open("./input/a","r")
+def deal_input(infile):
+    f = open(infile,"r")
     A = []
     B = []
     temp_in = f.readline()

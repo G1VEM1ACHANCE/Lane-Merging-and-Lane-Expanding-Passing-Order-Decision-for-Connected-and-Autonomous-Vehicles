@@ -118,7 +118,7 @@ def dpv1(A,B):
     i = len(A)
     j = len(B)
     cost = [NCA[i][j],CA[i][j],NCB[i][j],CB[i][j]]
-    last = 1#cost.index(min(cost))
+    last = cost.index(min(cost))
     prevstep = steps[last][i][j]
     path = []
     path.append(last)
@@ -148,10 +148,13 @@ def dpv1(A,B):
             B[numB].passingOrder = num
             B[numB].ifChange = 0
             numB += 1
-        elif path[num] == 2:
+        elif path[num] == 3:
             B[numB].passingOrder = num
             B[numB].ifChange = 1
             numB += 1
+    for i in range(len(A)):
+        print(A[i].passingOrder)
+    print(path)
     return A,B
 
         
@@ -167,7 +170,7 @@ def dpv1(A,B):
     print(CB,'\n',steps[3][:][:])
 
 
-A = [Vehicle("A_1",3,'A',0,[0,2,7,3,3],[0,3,7,4,4]),Vehicle("A_2",6,'A',2,[7,2,0,2,3],[7,7,0,7,4]),Vehicle("A_3",9,'A',4,[3,3,3,3,0],[4,4,4,4,0])]
-B = [Vehicle("B_1",4,'B',1,[2,0,2,4,3],[3,0,7,5,4]),Vehicle("B_2",7,'B',3,[3,4,2,0,3],[4,5,7,0,4])]
-dpv1(A,B)
+# A = [Vehicle("A_1",3,'A',0,[0,2,7,3,3],[0,3,7,4,4]),Vehicle("A_2",6,'A',2,[7,2,0,2,3],[7,7,0,7,4]),Vehicle("A_3",9,'A',4,[3,3,3,3,0],[4,4,4,4,0])]
+# B = [Vehicle("B_1",4,'B',1,[2,0,2,4,3],[3,0,7,5,4]),Vehicle("B_2",7,'B',3,[3,4,2,0,3],[4,5,7,0,4])]
+# dpv1(A,B)
 
