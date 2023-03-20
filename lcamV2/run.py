@@ -1,5 +1,8 @@
 import test, input
 from verify import decision_var, given_constant, verify
+import greedyV1
+import dpv1
+import sys
 from test import Vehicle
 
 def transfor_to_gg(output):   # gg = (N, M, T_safe, T_det, T_cacc, T_s, T_c, R) 
@@ -41,20 +44,26 @@ def transfor_to_dd(output):
 #Ai = ?
 #Si = ?
 #R = 20
+method = eval(sys.argv[1])
+print(method)
 
+A, B = input.deal_input()
+if method == 0:
+    A, B = test.FCFS(A,B)
+    test.lane_change_merge(A,B)
+    print("No lane change:",test.output[len(test.output) - 1]['scheduled_enter'])
+elif method == 1:
+    A, B = greedyV1.FCFS(A,B)
+    test.lane_change_merge(A,B)
+    print("greedy:",test.output[len(test.output) - 1]['scheduled_enter'])
+elif method == 2:
+    A, B = dpv1.dpv1(A,B)
+    test.lane_change_merge(A,B)
+    print("dp:",test.output[len(test.output) - 1]['scheduled_enter'])
 
-A, B = input.getInput()
-# A = [Vehicle("A_1",1,'A'),Vehicle("A_2",2,'A'),Vehicle("A_3",3,'A'),Vehicle("A_4",4,'A'),Vehicle("A_5",16,'A')]
-# B = [Vehicle("B_1",1,'B'),Vehicle("B_2",3,'B'),Vehicle("B_3",4,'B'),Vehicle("B_4",5,'B'),Vehicle("B_5",8,'B')]
-test.printPos(A)
-test.printPos(B)
-test.FCFS(A,B)
-test.W_init(A,B)
-
-test.lane_change_merge(A,B)
-
-#test.output.reverse()
+# #test.output.reverse()
 #print("aa",test.output)
+
 
 
 

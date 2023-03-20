@@ -33,6 +33,7 @@ D_safe = 2
 
 
 def FCFS(A,B):
+    D_safe = 2
     tempA = A.copy()
     tempB = B.copy()
     temp = tempA + tempB
@@ -52,15 +53,17 @@ def FCFS(A,B):
             idx = B.index(temp[i])
         time = []
         if temp[i].incLane != temp[i-1].incLane:
-            time = [temp[i].arrival_time,temp[i-1].decision_depart + max(temp[i-1].w_equal[temp[i].number],D_safe),temp[i-1].decision_depart +temp[i-1].w_plus[temp[i].number]]
+            time = [max(temp[i].arrival_time,temp[i-1].decision_depart + max(temp[i-1].w_equal[temp[i].number],D_safe)),max(temp[i].arrival_time,temp[i-1].decision_depart +temp[i-1].w_plus[temp[i].number])]
         else:
-            time = [temp[i].arrival_time,temp[i-1].decision_depart + temp[i-1].w_equal[temp[i].number],temp[i-1].decision_depart + max(temp[i-1].w_plus[temp[i].number],D_safe)]
+            time = [max(temp[i].arrival_time,temp[i-1].decision_depart + temp[i-1].w_equal[temp[i].number]),max(temp[i].arrival_time,temp[i-1].decision_depart + max(temp[i-1].w_plus[temp[i].number],D_safe))]
         temp[i].decision_depart = min(time)
         minidx = time.index(min(time))
-        if minidx == 1:
+        if min(time) == temp[i].arrival_time:
+            temp[i].ifChange = 0
+        elif minidx == 0:
             if temp[i].incLane != temp[i-1].lane:
                 temp[i].ifChange = 1
-        if minidx == 2:
+        elif minidx == 1:
             if temp[i].incLane == temp[i-1].lane:
                 temp[i].ifChange = 1
         if temp[i].ifChange == 1:
@@ -77,7 +80,11 @@ def FCFS(A,B):
             else:
                 temp[i].lane = 'B'
                 B[idx] = temp[i]
-
+    #print_order(A,B)
+    for i in range (len(A)):
+        A[i].decision_depart = -1
+    for i in range(len(B)):
+        B[i].decision_depart = -1
     return A,B
 
             

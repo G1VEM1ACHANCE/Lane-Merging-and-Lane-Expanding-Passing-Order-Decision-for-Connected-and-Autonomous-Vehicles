@@ -31,6 +31,7 @@ def verify(gg, dd):  # gg is for given constant, dd is for decision var
         isPass = True
         for i in range(gg.N):
             if dd.d_plus[i] < dd.d[i] or dd.d[i] < gg.D[i]:
+                print(dd.d_plus[i],dd.d[i],gg.D[i])
                 print(f'{dd.ID[i]} too fast at decision')
                 isPass = False
         return isPass

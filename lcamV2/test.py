@@ -54,10 +54,11 @@ def FCFS(A,B):
             A[A.index(temp[i])].passingOrder = i
         if temp[i] in B:
             B[B.index(temp[i])].passingOrder = i
-    for i in range(len(A)):
-        A[i].ifChange = 0#random.randint(0,1)
-    for i in range(len(B)):
-        B[i].ifChange = (i + 1) % 2#random.randint(0,1)
+    # for i in range(len(A)):
+    #     A[i].ifChange = 0#random.randint(0,1)
+    # for i in range(len(B)):
+    #     B[i].ifChange = (i + 1) % 2#random.randint(0,1)
+    return A,B
     
     
     
@@ -197,13 +198,9 @@ def pass_check(L,t,last_vehicle):
             if last_vehicle != None and L[i].passingOrder == last_vehicle.passingOrder + 1:
                 waiting = 0
                 if L[i].lane == last_vehicle.lane:
-                    for j in range(len(L[i].w_equal)):
-                        if L[i].w_equal[j][0] == last_vehicle.ID:
-                            waiting = L[i].w_equal[j][1]
+                    waiting = L[i].w_equal[last_vehicle.number]
                 if L[i].lane != last_vehicle.lane:
-                    for j in range(len(L[i].w_plus)):
-                        if L[i].w_plus[j][0] == last_vehicle.ID:
-                            waiting = L[i].w_plus[j][1]
+                    waiting = L[i].w_plus[last_vehicle.number]
                 L[i].waiting = waiting
                 if t - last_vehicle.scheduled_enter < waiting:
                     L[i].speed = 0
@@ -224,8 +221,7 @@ def lane_change_merge(A,B):
     temp = A.copy() + B.copy()
     temp.sort(key=myFunc)
     last_vehicle = None
-    for i in range(100):
-        
+    for i in range(200):
         pos_init(A,i)
         pos_init(B,i)
         # if (B[1].position == 22):
@@ -257,27 +253,7 @@ def lane_change_merge(A,B):
             return
             
     
-def deal_input():
-    f = open("./input/a","r")
-    A = []
-    B = []
-    temp_in = f.readline()
-    while (len(temp_in) > 0):
-        x = temp_in.split("[")
-        x1 = x[0].split(" ")
-        x4 = x[1].split("]")
-        x4 = x4[0].split(",")
-        x4 = [eval(i) for i in x4]
-        x5 = x[2].split("]")
-        x5 = x5[0].split(",")
-        x5 = [eval(i) for i in x5]
-        if x1[2] == 'A':
-            A.append(Vehicle(x1[0],eval(x1[1]),x1[2],eval(x1[3]),x4,x5))
-        else:
-            B.append(Vehicle(x1[0],eval(x1[1]),x1[2],eval(x1[3]),x4,x5))
-        temp_in = f.readline()
-    for i in range(len(A)):
-        print(A[i].ID,A[i].arrival_time,A[i].lane,A[i].number,A[i].w_equal,A[i].w_plus)
+
 
     
 

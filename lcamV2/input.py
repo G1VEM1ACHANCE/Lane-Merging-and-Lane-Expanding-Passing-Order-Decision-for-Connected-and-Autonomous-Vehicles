@@ -70,6 +70,28 @@ def getInput(Tsafe = 1, density = 8):    #同車道車arrival time保證不重�
     print_vehicles(A,B)
     return A, B
 
+def deal_input():
+    f = open("./input/a","r")
+    A = []
+    B = []
+    temp_in = f.readline()
+    while (len(temp_in) > 0):
+        x = temp_in.split("[")
+        x1 = x[0].split(" ")
+        x4 = x[1].split("]")
+        x4 = x4[0].split(",")
+        x4 = [eval(i) for i in x4]
+        x5 = x[2].split("]")
+        x5 = x5[0].split(",")
+        x5 = [eval(i) for i in x5]
+        if x1[2] == 'A':
+            A.append(Vehicle(x1[0],eval(x1[1]),x1[2],eval(x1[3]),x4,x5))
+        else:
+            B.append(Vehicle(x1[0],eval(x1[1]),x1[2],eval(x1[3]),x4,x5))
+        temp_in = f.readline()
+    # for i in range(len(A)):
+    #     print(A[i].ID,A[i].arrival_time,A[i].lane,A[i].number,A[i].w_equal,A[i].w_plus)
+    return A,B
 #getInput()
 
 
