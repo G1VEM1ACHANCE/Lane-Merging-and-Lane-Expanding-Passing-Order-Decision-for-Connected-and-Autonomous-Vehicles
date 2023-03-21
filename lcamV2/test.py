@@ -43,6 +43,9 @@ def W_init(A,B):
 def myFunc(e):
     return e.arrival_time
 
+def myFunc1(e):
+    return e.passingOrder
+
 def FCFS(A,B):
     tempA = A.copy()
     tempB = B.copy()
@@ -84,7 +87,7 @@ class Vehicle:
 
 def printPos(A):
     for i in range(len(A)):
-        print(A[i].ID,A[i].position,A[i].lane,A[i].ifChange,A[i].passingOrder)
+        print(A[i].ID,A[i].position,A[i].lane,A[i].ifChange,A[i].passingOrder,A[i].speed)
     print("\n")
 
 
@@ -97,11 +100,24 @@ def check_pre_decision_point(L,t,temp):
     for i in range (len(L)):
         L[i].speed = 1
         if L[i].position == decision_point + Tc:
+            printPos([L[i]])
+            printPos(temp)
             idx = temp.index(L[i])
             for j in range (idx):
-                if (temp[j].ifChange != 0 or temp[idx].ifChange != 0) and temp[j].position >= decision_point:
+                if (temp[j].ifChange != 0 or temp[idx].ifChange != 0) and temp[j].position >= decision_point and temp[j].passingOrder < temp[idx].passingOrder:
                     L[i].speed = 0
                     temp[idx].speed = 0
+            passings = temp.copy()
+            passings.sort(key=myFunc1)
+            printPos(passings)
+            idx1 = passings.index(L[i])
+            for j in range(idx1):
+                if (passings[j].ifChange != 0 and passings[j].incLane != 0):
+                    L[i].speed = 0
+                    temp[idx].speed = 0
+            if idx1 != 0:
+                L[i].speed = 0
+                temp[idx].speed = 0
     
                 
             
@@ -112,7 +128,7 @@ def check_decision_point(L,t,temp):
             L[i].decision_arrive = t
         if L[i].decision_arrive != -1 and L[i].position != decision_point and L[i].decision_depart == -1:
             L[i].decision_depart = t
-            temp.pop(0)
+            temp.pop(temp.index(L[i]))
             
             
 
@@ -224,7 +240,7 @@ def lane_change_merge(A,B):
     for i in range(200):
         pos_init(A,i)
         pos_init(B,i)
-        # if (B[10].position == 22):
+        # if (B[10].position == 25):
         #     printPos(A)
         #     printPos(B)
         #printPos(temp)

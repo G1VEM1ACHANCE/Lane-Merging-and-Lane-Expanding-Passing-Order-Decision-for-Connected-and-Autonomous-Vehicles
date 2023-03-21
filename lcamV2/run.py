@@ -58,9 +58,9 @@ elif method == 1:
     print("greedy:",test.output[len(test.output) - 1]['scheduled_enter'])
 elif method == 2:
     A, B = dpv1.dpv1(A,B)
-    print(A,B)
+    #print(A,B)
     test.lane_change_merge(A,B)
-    print("aa",test.output)
+    #print("aa",test.output)
     print("dp:",test.output[len(test.output) - 1]['scheduled_enter'])
 
 # #test.output.reverse()

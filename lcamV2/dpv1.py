@@ -153,7 +153,7 @@ def dpv1(A,B):
             B[numB].ifChange = 1
             numB += 1
     for i in range(len(A)):
-        print(A[i].passingOrder)
+        print(A[i].passingOrder,B[i].passingOrder)
     print(path)
     return A,B
 
