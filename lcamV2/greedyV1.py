@@ -29,11 +29,11 @@ def print_order(A,B):
         print(B[i].ID,B[i].passingOrder,B[i].ifChange,B[i].decision_depart)
 
 
-D_safe = 2
+D_safe = 4
 
 
 def FCFS(A,B):
-    D_safe = 2
+    D_safe = 4
     tempA = A.copy()
     tempB = B.copy()
     temp = tempA + tempB

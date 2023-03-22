@@ -5,7 +5,7 @@ import random,copy
 time = 0
 decision_point = 20
 lane_len = 50
-Tc = 2
+Tc = 4
 output = []
 tempout = []
 passing_count = 0
@@ -100,8 +100,8 @@ def check_pre_decision_point(L,t,temp):
     for i in range (len(L)):
         L[i].speed = 1
         if L[i].position == decision_point + Tc:
-            printPos([L[i]])
-            printPos(temp)
+            # printPos([L[i]])
+            #printPos(temp)
             idx = temp.index(L[i])
             for j in range (idx):
                 if (temp[j].ifChange != 0 or temp[idx].ifChange != 0) and temp[j].position >= decision_point and temp[j].passingOrder < temp[idx].passingOrder:
@@ -109,18 +109,17 @@ def check_pre_decision_point(L,t,temp):
                     temp[idx].speed = 0
             passings = temp.copy()
             passings.sort(key=myFunc1)
-            printPos(passings)
+            #printPos(passings)
             idx1 = passings.index(L[i])
-            for j in range(idx1):
-                if (passings[j].ifChange != 0 and passings[j].incLane != 0):
-                    L[i].speed = 0
-                    temp[idx].speed = 0
             if idx1 != 0:
-                L[i].speed = 0
-                temp[idx].speed = 0
-    
-                
+                for j in range(idx1):
+                    if (passings[j].ifChange != 0 and passings[j].incLane != 0):
+                        L[i].speed = 0
+                        temp[idx].speed = 0
             
+
+            
+
 
 def check_decision_point(L,t,temp):
     for i in range(len(L)):
@@ -237,7 +236,7 @@ def lane_change_merge(A,B):
     temp = A.copy() + B.copy()
     temp.sort(key=myFunc)
     last_vehicle = None
-    for i in range(200):
+    for i in range(1000):
         pos_init(A,i)
         pos_init(B,i)
         # if (B[10].position == 25):

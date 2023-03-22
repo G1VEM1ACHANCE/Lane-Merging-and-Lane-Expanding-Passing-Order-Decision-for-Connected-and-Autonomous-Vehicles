@@ -64,7 +64,7 @@ elif method == 2:
     print("dp:",test.output[len(test.output) - 1]['scheduled_enter'])
 
 # #test.output.reverse()
-print("aa",test.output)
+#print("aa",test.output)
 
 
 

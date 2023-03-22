@@ -22,7 +22,7 @@ num_A = 0
 num_B = 0
 t = 0
 w = [1,2,3,4,5,6]
-wp = [3,4,5]
+wp = [0,1,2]
 while (num_A < veh_num or num_B < veh_num):
     if num_A < veh_num and random.uniform(0,1) < lamb:
         id = num_A + num_B

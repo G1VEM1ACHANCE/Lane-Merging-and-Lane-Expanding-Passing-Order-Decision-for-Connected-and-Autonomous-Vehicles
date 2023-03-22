@@ -3,7 +3,7 @@ from test import Vehicle
 
 
 def dpv1(A,B):
-    D_safe = 2
+    D_safe = 4
     NCA = np.zeros([len(A) + 1,len(B) + 1])
     CA = np.zeros([len(A) + 1,len(B) + 1])
     NCB = np.zeros([len(A) + 1,len(B) + 1])
@@ -152,8 +152,8 @@ def dpv1(A,B):
             B[numB].passingOrder = num
             B[numB].ifChange = 1
             numB += 1
-    for i in range(len(A)):
-        print(A[i].passingOrder,B[i].passingOrder)
+    # for i in range(len(A)):
+    #     print(A[i].passingOrder,B[i].passingOrder)
     print(path)
     return A,B
 
