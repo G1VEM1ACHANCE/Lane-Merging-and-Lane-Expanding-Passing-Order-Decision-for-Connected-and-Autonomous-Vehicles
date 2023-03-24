@@ -93,7 +93,7 @@ def printPos(A):
 
 def pos_init(L,t):
     for i in range(len(L)):
-        if L[i].arrival_time == t:
+        if L[i].arrival_time <= t and L[i].arrival_time > t-1:
             L[i].position = lane_len
 
 def check_pre_decision_point(L,t,temp):

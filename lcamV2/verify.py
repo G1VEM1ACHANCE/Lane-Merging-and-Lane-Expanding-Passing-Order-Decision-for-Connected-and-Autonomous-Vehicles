@@ -48,7 +48,7 @@ def verify(gg, dd):  # gg is for given constant, dd is for decision var
             for j in range (gg.N):
                 if dd.d_plus[i] > dd.d_plus[j] and dd.l[i] == dd.l[j] and dd.l[i] != gg.S[i]:
                     if dd.d_plus[i] - dd.d_plus[j] < gg.T_safe:
-                        print(f'{dd.ID[i]} predecessor too close')
+                        print(dd.d_plus[i], dd.d_plus[j] ,gg.T_safe,f'{dd.ID[i]} predecessor too close')
                         isPass = False
         return isPass
 
