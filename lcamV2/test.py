@@ -87,23 +87,28 @@ class Vehicle:
 
 def printPos(A):
     for i in range(len(A)):
-        print(A[i].ID,A[i].position,A[i].lane,A[i].ifChange,A[i].passingOrder,A[i].speed)
+        print(A[i].ID,A[i].incLane,A[i].position,A[i].lane,A[i].ifChange,A[i].passingOrder,A[i].speed)
     print("\n")
 
 
 def pos_init(L,t):
     for i in range(len(L)):
         if L[i].arrival_time <= t and L[i].arrival_time > t-1:
-            L[i].position = lane_len
+            L[i].position = lane_len - (t - L[i].arrival_time)
 
 def check_pre_decision_point(L,t,temp):
     for i in range (len(L)):
         L[i].speed = 1
+        if L[i].position > decision_point + Tc and L[i].position < decision_point + Tc + 1:
+            L[i].speed = L[i].position - decision_point -Tc
+
         if L[i].position == decision_point + Tc:
             # printPos([L[i]])
             #printPos(temp)
             idx = temp.index(L[i])
             for j in range (idx):
+                # if L[i].ID == 'A_1':
+                #     print(idx,temp[j].ifChange,temp[idx].ifChange,temp[j].position , decision_point,temp[j].passingOrder ,temp[idx].passingOrder)
                 if (temp[j].ifChange != 0 or temp[idx].ifChange != 0) and temp[j].position >= decision_point and temp[j].passingOrder < temp[idx].passingOrder:
                     L[i].speed = 0
                     temp[idx].speed = 0
@@ -125,11 +130,32 @@ def check_decision_point(L,t,temp):
     for i in range(len(L)):
         if L[i].decision_arrive == -1 and L[i].position == decision_point:
             L[i].decision_arrive = t
-        if L[i].decision_arrive != -1 and L[i].position != decision_point and L[i].decision_depart == -1:
             L[i].decision_depart = t
             temp.pop(temp.index(L[i]))
             
-            
+def check_next_entry(A,B,temp):
+    if len(temp) == 0:
+        return
+    passings = temp.copy()
+    passings.sort(key=myFunc1)
+    # print('aa')
+    # printPos(passings)
+    # print('bb')
+    # printPos(B)
+    if passings[0].incLane == 'A' and passings[0].position == decision_point + Tc :
+        idx = A.index(passings[0])
+        for i in range(idx,len(A)):
+            A[i].speed = 1
+        for i in range (len(passings)):
+            if passings[i].incLane == 'A':
+                passings[i].speed = 1
+    elif passings[0].incLane == 'B' and passings[0].position == decision_point + Tc :
+        idx = B.index(passings[0])
+        for i in range(idx,len(B)):
+            B[i].speed = 1
+        for i in range (len(passings)):
+            if passings[i].incLane == 'B':
+                passings[i].speed = 1
 
 
 
@@ -165,8 +191,11 @@ def lane_change_check_B(A,B):
 def dist_check(L):
     for i in range(len(L)):
         for j in range (i):
-            if L[i].position - L[j].position == 1 and L[j].speed == 0:
-                L[i].speed = 0
+            if L[i].position - L[j].position == 1 and L[i].speed > L[j].speed:
+                L[i].speed = L[j].speed
+            if L[i].position - L[j].position > 1 and L[i].position - L[j].position < 2 and L[i].speed > L[j].speed:
+                L[i].speed = L[i].position - L[j].position + L[j].speed - 1
+
 
 
 def move(A,B,t,last_vehicle):
@@ -239,21 +268,17 @@ def lane_change_merge(A,B):
     for i in range(1000):
         pos_init(A,i)
         pos_init(B,i)
-        # if (B[10].position == 25):
-        #     printPos(A)
-        #     printPos(B)
         #printPos(temp)
-
         check_pre_decision_point(A,i,temp)
         check_pre_decision_point(B,i,temp)
-        
-        
 
         lane_change_check_A(A,B)
         lane_change_check_B(A,B)
 
         check_decision_point(A,i,temp)
         check_decision_point(B,i,temp)
+
+        check_next_entry(A,B,temp)
 
         dist_check(A)
         dist_check(B)
