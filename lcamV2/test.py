@@ -195,6 +195,8 @@ def dist_check(L):
                 L[i].speed = L[j].speed
             if L[i].position - L[j].position > 1 and L[i].position - L[j].position < 2 and L[i].speed > L[j].speed:
                 L[i].speed = L[i].position - L[j].position + L[j].speed - 1
+            if L[i].speed > 1:
+                L[i].speed = 1
 
 
 
@@ -269,19 +271,30 @@ def lane_change_merge(A,B):
         pos_init(A,i)
         pos_init(B,i)
         #printPos(temp)
+        print("aa")
         check_pre_decision_point(A,i,temp)
         check_pre_decision_point(B,i,temp)
+        # if B[2].ID == 'B_2':
+        #     printPos([B[2]])
 
         lane_change_check_A(A,B)
         lane_change_check_B(A,B)
+        # if B[2].ID == 'B_2':
+        #     printPos([B[2]])
 
         check_decision_point(A,i,temp)
         check_decision_point(B,i,temp)
+        # if B[2].ID == 'B_2':
+        #     printPos([B[2]])
 
         check_next_entry(A,B,temp)
+        # if B[2].ID == 'B_2':
+        #     printPos([B[2]])
 
         dist_check(A)
         dist_check(B)
+        # if B[2].ID == 'B_2':
+        #     printPos([B[2]])
 
         pass_check(A,i,last_vehicle)
         pass_check(B,i,last_vehicle)
