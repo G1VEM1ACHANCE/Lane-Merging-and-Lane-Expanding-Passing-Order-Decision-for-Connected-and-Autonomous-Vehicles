@@ -4,7 +4,7 @@ import random,copy
 
 time = 0
 decision_point = 20
-lane_len = 50
+lane_len = 80
 Tc = 4
 output = []
 tempout = []
@@ -270,29 +270,37 @@ def lane_change_merge(A,B):
     for i in range(1000):
         pos_init(A,i)
         pos_init(B,i)
-        #printPos(temp)
-        print("aa")
         check_pre_decision_point(A,i,temp)
         check_pre_decision_point(B,i,temp)
+        # print("aaaaa")
+        # for j in range (len(temp)):
+        #     if temp[j].ID == 'A_38':
+        #         printPos([temp[j],temp[j+1],temp[j+2]])
         # if B[2].ID == 'B_2':
         #     printPos([B[2]])
 
         lane_change_check_A(A,B)
         lane_change_check_B(A,B)
-        # if B[2].ID == 'B_2':
-        #     printPos([B[2]])
+        # for j in range (len(temp)):
+        #     if temp[j].ID == 'A_38':
+        #         printPos([temp[j],temp[j+1],temp[j+2]])
 
         check_decision_point(A,i,temp)
         check_decision_point(B,i,temp)
-        # if B[2].ID == 'B_2':
-        #     printPos([B[2]])
+        # for j in range (len(temp)):
+        #     if temp[j].ID == 'A_38':
+        #         printPos([temp[j],temp[j+1],temp[j+2]])
 
         check_next_entry(A,B,temp)
-        # if B[2].ID == 'B_2':
-        #     printPos([B[2]])
+        # for j in range (len(temp)):
+        #     if temp[j].ID == 'A_38':
+        #         printPos([temp[j],temp[j+1],temp[j+2]])
 
         dist_check(A)
         dist_check(B)
+        # for j in range (len(temp)):
+        #     if temp[j].ID == 'A_38':
+        #         printPos([temp[j],temp[j+1],temp[j+2]])
         # if B[2].ID == 'B_2':
         #     printPos([B[2]])
 
