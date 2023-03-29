@@ -128,7 +128,7 @@ def check_pre_decision_point(L,t,temp):
 
 def check_decision_point(L,t,temp):
     for i in range(len(L)):
-        if L[i].decision_arrive == -1 and L[i].position == decision_point:
+        if L[i].decision_arrive == -1 and L[i].position == decision_point and L[i].speed == 1:
             L[i].decision_arrive = t
             L[i].decision_depart = t
             temp.pop(temp.index(L[i]))
@@ -192,8 +192,11 @@ def dist_check(L):
     for i in range(len(L)):
         for j in range (i):
             if L[i].position - L[j].position == 1 and L[i].speed > L[j].speed:
+                # printPos([L[i],L[j]])
+                # print("came")
                 L[i].speed = L[j].speed
             if L[i].position - L[j].position > 1 and L[i].position - L[j].position < 2 and L[i].speed > L[j].speed:
+                # print("came1")
                 L[i].speed = L[i].position - L[j].position + L[j].speed - 1
             if L[i].speed > 1:
                 L[i].speed = 1
@@ -272,37 +275,35 @@ def lane_change_merge(A,B):
         pos_init(B,i)
         check_pre_decision_point(A,i,temp)
         check_pre_decision_point(B,i,temp)
-        # print("aaaaa")
-        # for j in range (len(temp)):
-        #     if temp[j].ID == 'A_38':
-        #         printPos([temp[j],temp[j+1],temp[j+2]])
-        # if B[2].ID == 'B_2':
-        #     printPos([B[2]])
+        #printPos(temp)
+        #print("aaaaa")
+        # for j in range (len(B)):
+        #     if B[j].ID == 'B_2':
+        #         printPos([B[j]])
 
         lane_change_check_A(A,B)
         lane_change_check_B(A,B)
-        # for j in range (len(temp)):
-        #     if temp[j].ID == 'A_38':
-        #         printPos([temp[j],temp[j+1],temp[j+2]])
+        # for j in range (len(B)):
+        #     if B[j].ID == 'B_2':
+        #         print("bb")
+        #         printPos([B[j]])
 
         check_decision_point(A,i,temp)
         check_decision_point(B,i,temp)
-        # for j in range (len(temp)):
-        #     if temp[j].ID == 'A_38':
-        #         printPos([temp[j],temp[j+1],temp[j+2]])
+        # for j in range (len(B)):
+        #     if B[j].ID == 'B_2':
+        #         printPos([B[j]])
 
         check_next_entry(A,B,temp)
-        # for j in range (len(temp)):
-        #     if temp[j].ID == 'A_38':
-        #         printPos([temp[j],temp[j+1],temp[j+2]])
+        # for j in range (len(B)):
+        #     if B[j].ID == 'B_2':
+        #         printPos([B[j]])
 
         dist_check(A)
         dist_check(B)
-        # for j in range (len(temp)):
-        #     if temp[j].ID == 'A_38':
-        #         printPos([temp[j],temp[j+1],temp[j+2]])
-        # if B[2].ID == 'B_2':
-        #     printPos([B[2]])
+        # for j in range (len(B)):
+            # if B[j].ID == 'B_2':
+            #     printPos([B[j]])
 
         pass_check(A,i,last_vehicle)
         pass_check(B,i,last_vehicle)
