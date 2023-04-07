@@ -23,6 +23,7 @@ target:
 		python3 ../run.py 0 $$file > ../output/$$file/0;\
 		python3 ../run.py 1 $$file > ../output/$$file/1;\
 		python3 ../run.py 2 $$file > ../output/$$file/2;\
+		python3 ../run.py 3 $$file > ../output/$$file/3;\
 		done \
 	done \
 	

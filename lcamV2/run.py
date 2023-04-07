@@ -2,6 +2,7 @@ import test, input
 from verify import decision_var, given_constant, verify
 import greedyV1
 import dpv1
+import nldp
 import sys
 from test import Vehicle
 
@@ -62,6 +63,10 @@ elif method == 2:
     test.lane_change_merge(A,B)
     #print("aa",test.output)
     print("dp:",test.output[len(test.output) - 1]['scheduled_enter'])
+elif method == 3:
+    A, B = nldp.nldp(A,B)
+    test.lane_change_merge(A,B)
+    print("nldp:",test.output[len(test.output) - 1]['scheduled_enter'])
 
 # #test.output.reverse()
 #print("aa",test.output)

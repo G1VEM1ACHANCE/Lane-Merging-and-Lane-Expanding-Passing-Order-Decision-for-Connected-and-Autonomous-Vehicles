@@ -15,15 +15,15 @@ for subdir in os.scandir(rootdir):
             with open(files.path) as openfile:
                 print(files.path)
                 for line in openfile:
-                    if ('No' in line) or 'dp' in line or 'greedy' in line:
+                    if ('No' in line) or 'dp' in line or 'greedy' in line or 'nldp' in line:
                         ls = line.split(" ")
                         temp.append(eval(ls[len(ls) - 1].split('\n')[0]))
-        alllist.append([filesplit[2], eval(filesplit[3]),temp[0],temp[1],temp[2]])
+        alllist.append([filesplit[2], eval(filesplit[3]),temp[0],temp[1],temp[2],temp[3]])
 
 alllist.sort(key=myfunc)
 
 with open ("output.csv","w",newline="") as file:
     csvwriter = csv.writer(file)
-    csvwriter.writerow(['case','num','n lane change','greedy','dp'])
+    csvwriter.writerow(['case','num','n lane change','greedy','nldp','dp'])
     csvwriter.writerows(alllist)
             

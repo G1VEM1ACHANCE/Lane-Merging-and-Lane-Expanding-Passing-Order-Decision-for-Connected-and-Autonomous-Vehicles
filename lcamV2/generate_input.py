@@ -26,7 +26,7 @@ num_A = 0
 num_B = 0
 t = 0
 w = [1,2,3,4,5,6]
-wp = [0,1,2]
+wp = [2,3,4]
 lastA = 0
 lastB = 0
 for i in range (veh_num):
