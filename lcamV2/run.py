@@ -4,7 +4,15 @@ import greedyV1
 import dpv1
 import nldp
 import sys
+import time
 from test import Vehicle
+
+def get_delay(output):
+    delay = 0
+    for i in range (len(output)):
+        delay += output[i]['scheduled_enter'] - output[i]['arrival_time']
+    delay /= len(output)
+    return delay
 
 def transfor_to_gg(output):   # gg = (N, M, T_safe, T_det, T_cacc, T_s, T_c, R) 
     gg = given_constant(N,T_safe)
@@ -50,23 +58,31 @@ print(method)
 
 A, B = input.deal_input(sys.argv[2])
 if method == 0:
+    start = time.time()
     A, B = test.FCFS(A,B)
+    end = time.time()
     test.lane_change_merge(A,B)
-    print("No lane change:",test.output[len(test.output) - 1]['scheduled_enter'])
+    print("No lane change:",test.output[len(test.output) - 1]['scheduled_enter'],get_delay(test.output),end-start)
 elif method == 1:
+    start = time.time()
     A, B = greedyV1.FCFS(A,B)
+    end = time.time()
     test.lane_change_merge(A,B)
-    print("greedy:",test.output[len(test.output) - 1]['scheduled_enter'])
+    print("greedy:",test.output[len(test.output) - 1]['scheduled_enter'],get_delay(test.output),end-start)
 elif method == 2:
+    start = time.time()
     A, B = dpv1.dpv1(A,B)
+    end = time.time()
     #print(A,B)
     test.lane_change_merge(A,B)
     #print("aa",test.output)
-    print("dp:",test.output[len(test.output) - 1]['scheduled_enter'])
+    print("dp:",test.output[len(test.output) - 1]['scheduled_enter'],get_delay(test.output),end-start)
 elif method == 3:
+    start = time.time()
     A, B = nldp.nldp(A,B)
+    end = time.time()
     test.lane_change_merge(A,B)
-    print("nldp:",test.output[len(test.output) - 1]['scheduled_enter'])
+    print("nldp:",test.output[len(test.output) - 1]['scheduled_enter'],get_delay(test.output),end-start)
 
 # #test.output.reverse()
 #print("aa",test.output)
