@@ -1,0 +1,3146 @@
+Set parameter Username
+Academic license - for non-commercial use only - expires 2024-04-30
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x812073c9
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 919 rows and 4819 columns
+Presolve time: 0.24s
+Presolved: 2546 rows, 1899 columns, 7980 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1897 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 683 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  300          -    0.22222      -     -    0s
+     0     0    0.22222    0  300          -    0.22222      -     -    0s
+     0     0    0.22222    0   34          -    0.22222      -     -    0s
+     0     0    0.22222    0   46          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+H    0     0                      41.8888889    0.22222  99.5%     -    0s
+     0     2    0.22222    0   26   41.88889    0.22222  99.5%     -    0s
+H   27    31                       1.8888889    0.22222  88.2%  56.8    0s
+H  126   158                       1.2222222    0.22222  81.8%   114    1s
+H  246   125                       0.2222222    0.22222  0.00%   167    2s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 30
+  Cover: 152
+  Implied bound: 40
+  Clique: 20
+  MIR: 43
+  Flow cover: 11
+  GUB cover: 3
+  Zero half: 34
+  RLT: 17
+  Relax-and-lift: 18
+  PSD: 11
+
+Explored 327 nodes (57382 simplex iterations) in 2.90 seconds (1.81 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 1.22222 1.88889 41.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 78.69999999999999 27.523977272727276 117 0.03213787078857422
+our 67.69999999999999 25.571136363636366 106
+our1 78.69999999999999 26.898977272727276 117
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x3a79b84b
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 914 rows and 4823 columns
+Presolve time: 0.32s
+Presolved: 2551 rows, 1895 columns, 7998 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1893 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 692 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   70          -    0.22222      -     -    0s
+     0     0    0.22222    0  114          -    0.22222      -     -    0s
+     0     0    0.22222    0  113          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   72          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+H    0     0                      11.5555556    0.22222  98.1%     -    0s
+     0     0    0.22222    0   68   11.55556    0.22222  98.1%     -    0s
+     0     0    0.22222    0   40   11.55556    0.22222  98.1%     -    0s
+     0     0    0.22222    0   40   11.55556    0.22222  98.1%     -    0s
+     0     2    0.22222    0   39   11.55556    0.22222  98.1%     -    0s
+H   27    39                       0.2222222    0.22222  0.00%  13.4    0s
+
+Cutting planes:
+  Gomory: 14
+  Cover: 48
+  Implied bound: 3
+  Clique: 1
+  MIR: 5
+  Flow cover: 8
+  Zero half: 19
+  RLT: 22
+  Relax-and-lift: 6
+
+Explored 40 nodes (4431 simplex iterations) in 0.97 seconds (0.39 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0.222222 11.5556 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 15.0
+u1_2 15.000000000000185
+u1_3 15.0
+u1_4 14.999999999999815
+u1_5 13.999999999999998
+FCFS 62.699999999999996 25.313295454545457 101 0.016241788864135742
+our 55.589999999999996 24.44375 93
+our1 62.699999999999996 24.005000000000003 101
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x98363732
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 932 rows and 4827 columns
+Presolve time: 0.29s
+Presolved: 2533 rows, 1891 columns, 7948 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1889 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 705 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+     0     0    0.22222    0  189          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   41          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+H    0     0                      24.8888889    0.22222  99.1%     -    0s
+H    0     0                       3.5555556    0.22222  93.7%     -    0s
+H    0     2                       2.5555556    0.22222  91.3%     -    0s
+     0     2    0.22222    0   26    2.55556    0.22222  91.3%     -    0s
+H  252   142                       0.2222222    0.22222  0.00%  99.3    1s
+
+Cutting planes:
+  Gomory: 38
+  Cover: 93
+  Implied bound: 13
+  Clique: 14
+  MIR: 25
+  StrongCG: 2
+  Flow cover: 17
+  GUB cover: 4
+  Zero half: 13
+  RLT: 19
+  Relax-and-lift: 14
+
+Explored 264 nodes (32650 simplex iterations) in 1.67 seconds (1.01 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 2.55556 3.55556 24.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.000000000000002
+u1_1 15.0
+u1_2 14.0
+u1_3 15.0
+u1_4 14.0
+u1_5 15.0
+FCFS 87.69999999999999 34.25965909090909 126 0.019365787506103516
+our 76.69999999999999 30.69659090909091 115
+our1 87.69999999999999 31.90784090909091 126
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x5913de13
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 927 rows and 4826 columns
+Presolve time: 0.28s
+Presolved: 2538 rows, 1892 columns, 7963 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1890 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 647 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  244          -    0.22222      -     -    0s
+     0     0    0.22222    0  236          -    0.22222      -     -    0s
+     0     0    0.22222    0   27          -    0.22222      -     -    0s
+     0     0    0.22222    0   35          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     2    0.22222    0   26          -    0.22222      -     -    0s
+*  727   792             155      50.2222222    0.22222   100%  31.8    2s
+H  931   315                       2.5555556    0.22222  91.3%  29.1    2s
+H  974   313                       1.5555556    0.22222  85.7%  41.2    4s
+H  975   299                       0.5555556    0.22222  60.0%  41.1    4s
+H 1027   323                       0.2222222    0.22222  0.00%  51.9    4s
+
+Cutting planes:
+  Gomory: 105
+  Cover: 71
+  Implied bound: 2
+  Projected implied bound: 5
+  Clique: 2
+  MIR: 58
+  StrongCG: 14
+  Flow cover: 111
+  GUB cover: 3
+  Zero half: 87
+  Network: 1
+  RLT: 1
+  Relax-and-lift: 12
+  PSD: 5
+
+Explored 1043 nodes (62988 simplex iterations) in 4.94 seconds (2.31 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 0.555556 1.55556 ... 50.2222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 70.69999999999999 28.40409090909091 107 0.02947688102722168
+our 64.69999999999999 27.416704545454547 103
+our1 70.69999999999999 27.003977272727273 107
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x142e76f3
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 917 rows and 4824 columns
+Presolve time: 0.21s
+Presolved: 2548 rows, 1894 columns, 7991 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 672 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0  164          -    0.22222      -     -    0s
+     0     0    0.22222    0  164          -    0.22222      -     -    0s
+     0     0    0.22222    0  170          -    0.22222      -     -    0s
+     0     0    0.22222    0   24          -    0.22222      -     -    0s
+H    0     0                      97.2222222    0.22222   100%     -    0s
+     0     0    0.22222    0   27   97.22222    0.22222   100%     -    0s
+H    0     0                       6.8888889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   43    6.88889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   24    6.88889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   60    6.88889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   58    6.88889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   25    6.88889    0.22222  96.8%     -    0s
+     0     0    0.22222    0   25    6.88889    0.22222  96.8%     -    0s
+H    0     0                       3.2222222    0.22222  93.1%     -    0s
+     0     2    0.22222    0   25    3.22222    0.22222  93.1%     -    0s
+H   95    93                       0.2222222    0.22222  0.00%  61.4    1s
+
+Cutting planes:
+  Gomory: 17
+  Cover: 56
+  Implied bound: 1
+  MIR: 11
+  Flow cover: 7
+  GUB cover: 2
+  Zero half: 19
+  RLT: 18
+  Relax-and-lift: 6
+  PSD: 3
+
+Explored 96 nodes (11416 simplex iterations) in 1.03 seconds (0.60 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 3.22222 6.88889 97.2222 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 14.0
+u1_4 15.0
+u1_5 14.0
+FCFS 57.699999999999996 23.076818181818183 96 0.025468826293945312
+our 53.699999999999996 23.217386363636365 93
+our1 57.699999999999996 20.155 96
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x3cada0a3
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 918 rows and 4818 columns
+Presolve time: 0.28s
+Presolved: 2547 rows, 1900 columns, 7985 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1898 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 649 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+H    0     0                      29.8888889    0.22222  99.3%     -    0s
+     0     0    0.22222    0  245   29.88889    0.22222  99.3%     -    0s
+     0     0    0.22222    0  237   29.88889    0.22222  99.3%     -    0s
+H    0     0                       3.2222222    0.22222  93.1%     -    0s
+     0     0    0.22222    0   22    3.22222    0.22222  93.1%     -    0s
+     0     0    0.22222    0   38    3.22222    0.22222  93.1%     -    0s
+     0     0    0.22222    0   42    3.22222    0.22222  93.1%     -    0s
+     0     0    0.22222    0   30    3.22222    0.22222  93.1%     -    0s
+     0     0    0.22222    0   30    3.22222    0.22222  93.1%     -    0s
+H    0     0                       0.2222222    0.22222  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 27
+  Cover: 68
+  Implied bound: 8
+  Clique: 11
+  MIR: 26
+  Flow cover: 11
+  GUB cover: 5
+  Zero half: 23
+  RLT: 17
+  Relax-and-lift: 10
+
+Explored 1 nodes (3929 simplex iterations) in 0.73 seconds (0.31 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 0.222222 3.22222 29.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.999999999999998
+u1_1 15.000000000000002
+u1_2 14.0
+u1_3 15.0
+u1_4 15.0
+u1_5 14.0
+FCFS 72.69999999999999 30.323977272727273 110 0.024422168731689453
+our 67.69999999999999 26.73931818181818 105
+our1 72.69999999999999 29.733068181818183 110
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x9cebf8ab
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 926 rows and 4819 columns
+Presolve time: 0.23s
+Presolved: 2539 rows, 1899 columns, 7964 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1897 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 719 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      13.8888889    0.22222  98.4%     -    0s
+     0     0    0.22222    0   78   13.88889    0.22222  98.4%     -    0s
+H    0     0                       5.8888889    0.22222  96.2%     -    0s
+     0     0    0.22222    0   32    5.88889    0.22222  96.2%     -    0s
+     0     0    0.22222    0   32    5.88889    0.22222  96.2%     -    0s
+     0     0    0.22222    0   41    5.88889    0.22222  96.2%     -    0s
+H    0     0                       5.5555556    0.22222  96.0%     -    0s
+     0     0    0.22222    0   36    5.55556    0.22222  96.0%     -    0s
+     0     0    0.22222    0   34    5.55556    0.22222  96.0%     -    0s
+     0     0    0.22222    0   34    5.55556    0.22222  96.0%     -    0s
+     0     2    0.22222    0   34    5.55556    0.22222  96.0%     -    0s
+H   39    63                       0.2222222    0.22222  0.00%  11.6    0s
+
+Cutting planes:
+  Gomory: 13
+  Cover: 43
+  Implied bound: 4
+  Clique: 3
+  MIR: 5
+  StrongCG: 1
+  Flow cover: 8
+  Zero half: 16
+  RLT: 17
+  Relax-and-lift: 9
+
+Explored 62 nodes (4430 simplex iterations) in 0.68 seconds (0.36 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 5.55556 5.88889 13.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 73.69999999999999 25.11568181818182 112 0.021044015884399414
+our 66.69999999999999 26.416363636363638 103
+our1 73.69999999999999 24.465 112
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xa1e06fe8
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 920 rows and 4821 columns
+Presolve time: 0.22s
+Presolved: 2545 rows, 1897 columns, 7976 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1895 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 660 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  277          -    0.22222      -     -    0s
+     0     0    0.22222    0   21          -    0.22222      -     -    0s
+H    0     0                      37.2222222    0.22222  99.4%     -    0s
+     0     0    0.22222    0   27   37.22222    0.22222  99.4%     -    0s
+     0     0    0.22222    0   39   37.22222    0.22222  99.4%     -    0s
+H    0     0                      10.5555556    0.22222  97.9%     -    0s
+     0     0    0.22222    0  188   10.55556    0.22222  97.9%     -    0s
+     0     0    0.22222    0  167   10.55556    0.22222  97.9%     -    0s
+     0     0    0.22222    0   24   10.55556    0.22222  97.9%     -    0s
+     0     0    0.22222    0   24   10.55556    0.22222  97.9%     -    0s
+H    0     0                       9.8888889    0.22222  97.8%     -    0s
+     0     2    0.22222    0   24    9.88889    0.22222  97.8%     -    0s
+H  104    99                       4.5555556    0.22222  95.1%   126    1s
+H  742    10                       0.2222222    0.22222  0.00%   137    4s
+
+Cutting planes:
+  Learned: 5
+  Gomory: 34
+  Cover: 335
+  Implied bound: 242
+  Clique: 19
+  MIR: 79
+  StrongCG: 1
+  Flow cover: 35
+  GUB cover: 4
+  Zero half: 84
+  RLT: 22
+  Relax-and-lift: 17
+  PSD: 6
+
+Explored 742 nodes (105634 simplex iterations) in 5.13 seconds (3.58 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 4.55556 9.88889 ... 37.2222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 14.0
+u1_3 14.999999999999998
+u1_4 13.999999999999998
+u1_5 15.000000000000002
+FCFS 64.69999999999999 27.08534090909091 103 0.03118586540222168
+our 69.69999999999999 28.63534090909091 109
+our1 64.69999999999999 24.695795454545454 103
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x2767dd23
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 930 rows and 4824 columns
+Presolve time: 0.24s
+Presolved: 2535 rows, 1894 columns, 7950 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 669 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   21          -    0.22222      -     -    0s
+     0     0    0.22222    0   98          -    0.22222      -     -    0s
+     0     0    0.22222    0  116          -    0.22222      -     -    0s
+     0     0    0.22222    0   25          -    0.22222      -     -    0s
+     0     0    0.22222    0   25          -    0.22222      -     -    0s
+     0     0    0.22222    0   25          -    0.22222      -     -    0s
+H    0     0                      37.5555556    0.22222  99.4%     -    0s
+     0     0    0.22222    0   26   37.55556    0.22222  99.4%     -    0s
+     0     0    0.22222    0   26   37.55556    0.22222  99.4%     -    0s
+     0     0    0.22222    0   26   37.55556    0.22222  99.4%     -    0s
+H    0     0                       7.8888889    0.22222  97.2%     -    0s
+     0     2    0.22222    0   26    7.88889    0.22222  97.2%     -    0s
+H   28    28                       0.8888889    0.22222  75.0%   130    0s
+H  179   125                       0.2222222    0.22222  0.00%   109    1s
+
+Cutting planes:
+  Gomory: 23
+  Cover: 50
+  Implied bound: 6
+  MIR: 9
+  Flow cover: 9
+  Zero half: 12
+  RLT: 17
+  Relax-and-lift: 5
+  PSD: 13
+
+Explored 209 nodes (36975 simplex iterations) in 1.99 seconds (1.36 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 0.888889 7.88889 37.5556 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 13.999999999999998
+u1_2 15.0
+u1_3 15.0
+u1_4 15.0
+u1_5 15.0
+FCFS 62.699999999999996 25.36727272727273 100 0.016326904296875
+our 58.699999999999996 24.74784090909091 96
+our1 62.699999999999996 24.338409090909092 100
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xa31abb0f
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 929 rows and 4824 columns
+Presolve time: 0.25s
+Presolved: 2536 rows, 1894 columns, 7956 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 731 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+     0     0    0.22222    0  209          -    0.22222      -     -    0s
+     0     0    0.22222    0  203          -    0.22222      -     -    0s
+     0     0    0.22222    0  198          -    0.22222      -     -    0s
+     0     0    0.22222    0   35          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+H    0     0                      80.5555556    0.22222   100%     -    0s
+H    0     0                      58.2222222    0.22222   100%     -    0s
+     0     2    0.22222    0   28   58.22222    0.22222   100%     -    0s
+H   33    53                       2.2222222    0.22222  90.0%  29.9    0s
+H   91    83                       1.2222222    0.22222  81.8%  48.3    1s
+H  119   174                       0.2222222    0.22222  0.00%  50.4    1s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 29
+  Cover: 79
+  Implied bound: 21
+  Clique: 20
+  MIR: 26
+  StrongCG: 2
+  Flow cover: 15
+  GUB cover: 2
+  Zero half: 18
+  RLT: 9
+  Relax-and-lift: 17
+  PSD: 5
+
+Explored 205 nodes (11070 simplex iterations) in 1.43 seconds (0.77 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 1.22222 2.22222 ... 80.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.999999999999996
+u1_1 15.000000000000002
+u1_2 15.000000000000002
+u1_3 14.0
+u1_4 15.0
+u1_5 14.0
+FCFS 65.42 25.15943181818182 104 0.02206707000732422
+our 70.69999999999999 25.239318181818184 109
+our1 65.42 24.69875 104
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xaae858a8
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 923 rows and 4823 columns
+Presolve time: 0.30s
+Presolved: 2542 rows, 1895 columns, 7967 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1893 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 698 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  260          -    0.22222      -     -    0s
+     0     0    0.22222    0  259          -    0.22222      -     -    0s
+     0     0    0.22222    0   21          -    0.22222      -     -    0s
+H    0     0                      64.8888889    0.22222   100%     -    0s
+     0     0    0.22222    0   22   64.88889    0.22222   100%     -    0s
+     0     0    0.22222    0   35   64.88889    0.22222   100%     -    0s
+     0     0    0.22222    0   35   64.88889    0.22222   100%     -    0s
+H    0     0                      11.8888889    0.22222  98.1%     -    0s
+     0     2    0.22222    0   23   11.88889    0.22222  98.1%     -    0s
+H   43    47                       5.5555556    0.22222  96.0%   166    1s
+H  300   324                       0.2222222    0.22222  0.00%  74.7    2s
+
+Cutting planes:
+  Gomory: 45
+  Cover: 110
+  Implied bound: 39
+  Clique: 31
+  MIR: 35
+  StrongCG: 2
+  Flow cover: 30
+  GUB cover: 10
+  Zero half: 35
+  Network: 1
+  RLT: 24
+  Relax-and-lift: 24
+
+Explored 360 nodes (27757 simplex iterations) in 2.17 seconds (1.10 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 5.55556 11.8889 64.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 15.0
+u1_2 15.0
+u1_3 14.0
+u1_4 15.0
+u1_5 15.0
+FCFS 60.699999999999996 28.148181818181822 99 0.03076791763305664
+our 65.69999999999999 29.118295454545457 104
+our1 60.699999999999996 23.89840909090909 99
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xa37f2856
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 933 rows and 4825 columns
+Presolve time: 0.22s
+Presolved: 2532 rows, 1893 columns, 7944 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1891 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 716 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      65.8888889    0.22222   100%     -    0s
+     0     0    0.22222    0  260   65.88889    0.22222   100%     -    0s
+H    0     0                       9.2222222    0.22222  97.6%     -    0s
+     0     0    0.22222    0   23    9.22222    0.22222  97.6%     -    0s
+     0     0    0.22222    0   29    9.22222    0.22222  97.6%     -    0s
+     0     0    0.22222    0   29    9.22222    0.22222  97.6%     -    0s
+H    0     0                       2.8888889    0.22222  92.3%     -    0s
+     0     2    0.22222    0   29    2.88889    0.22222  92.3%     -    0s
+H  282   249                       0.8888889    0.22222  75.0%  54.7    1s
+H  479   122                       0.2222222    0.22222  0.00%  91.5    3s
+
+Cutting planes:
+  Gomory: 44
+  Cover: 163
+  Implied bound: 35
+  Clique: 41
+  MIR: 34
+  Flow cover: 17
+  GUB cover: 8
+  Zero half: 30
+  Network: 2
+  RLT: 31
+  Relax-and-lift: 20
+
+Explored 535 nodes (62334 simplex iterations) in 3.65 seconds (2.22 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 0.888889 2.88889 ... 65.8889
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 14.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 15.0
+FCFS 64.42 29.246136363636367 102 0.030922889709472656
+our 55.699999999999996 27.825568181818184 94
+our1 64.42 24.088295454545456 102
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x0f15a8e2
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 926 rows and 4824 columns
+Presolve time: 0.29s
+Presolved: 2539 rows, 1894 columns, 7962 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 659 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   24          -    0.22222      -     -    0s
+     0     0    0.22222    0  190          -    0.22222      -     -    0s
+     0     0    0.22222    0   35          -    0.22222      -     -    0s
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+H    0     0                      10.2222222    0.22222  97.8%     -    0s
+H    0     2                       8.5555556    0.22222  97.4%     -    0s
+     0     2    0.22222    0   23    8.55556    0.22222  97.4%     -    0s
+H   27    36                       7.2222222    0.22222  96.9%  60.0    0s
+H   34    36                       2.8888889    0.22222  92.3%  55.9    0s
+H   86    76                       1.5555556    0.22222  85.7%   113    1s
+*  384   278             157       1.2222222    0.22222  81.8%  72.4    3s
+H  483   148                       0.2222222    0.22222  0.00%  76.7    3s
+
+Cutting planes:
+  Learned: 4
+  Gomory: 37
+  Cover: 193
+  Implied bound: 108
+  Clique: 17
+  MIR: 16
+  StrongCG: 1
+  Flow cover: 26
+  GUB cover: 2
+  Zero half: 29
+  RLT: 16
+  Relax-and-lift: 15
+  PSD: 8
+
+Explored 576 nodes (51015 simplex iterations) in 3.57 seconds (1.76 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 0.222222 1.22222 1.55556 ... 10.2222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 14.0
+u1_3 15.0
+u1_4 15.0
+u1_5 14.0
+FCFS 66.42 27.66340909090909 106 0.042729854583740234
+our 64.69999999999999 27.645795454545457 101
+our1 64.93 26.53875 101
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x4ec198c5
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 924 rows and 4820 columns
+Presolve time: 0.35s
+Presolved: 2541 rows, 1898 columns, 7961 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1896 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 711 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      39.5555556    0.22222  99.4%     -    0s
+     0     0    0.22222    0  314   39.55556    0.22222  99.4%     -    0s
+     0     0    0.22222    0  306   39.55556    0.22222  99.4%     -    0s
+H    0     0                      33.8888889    0.22222  99.3%     -    0s
+     0     0    0.22222    0   27   33.88889    0.22222  99.3%     -    0s
+     0     0    0.22222    0   80   33.88889    0.22222  99.3%     -    0s
+     0     0    0.22222    0   27   33.88889    0.22222  99.3%     -    0s
+     0     0    0.22222    0   27   33.88889    0.22222  99.3%     -    0s
+H    0     0                      16.2222222    0.22222  98.6%     -    0s
+H    0     2                       9.5555556    0.22222  97.7%     -    0s
+     0     2    0.22222    0   27    9.55556    0.22222  97.7%     -    0s
+H   27    33                       5.8888889    0.22222  96.2%  11.3    1s
+H  146   151                       2.2222222    0.22222  90.0%  90.6    2s
+H  173   264                       0.8888889    0.22222  75.0%  90.2    3s
+H  689   138                       0.2222222    0.22222  0.00%  77.4    4s
+
+Cutting planes:
+  Gomory: 26
+  Cover: 97
+  Implied bound: 17
+  Clique: 20
+  MIR: 43
+  Flow cover: 20
+  GUB cover: 7
+  Zero half: 39
+  RLT: 27
+  Relax-and-lift: 17
+  PSD: 1
+
+Explored 748 nodes (68803 simplex iterations) in 4.83 seconds (2.52 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 8: 0.222222 0.888889 2.22222 ... 39.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.999999999999996
+u1_1 15.000000000000002
+u1_2 15.0
+u1_3 15.000000000000002
+u1_4 14.0
+u1_5 14.0
+FCFS 70.27 27.818295454545453 108.85 0.031423091888427734
+our 78.27 28.53090909090909 116.85
+our1 55.699999999999996 20.40659090909091 94
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x68922614
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 927 rows and 4823 columns
+Presolve time: 0.60s
+Presolved: 2538 rows, 1895 columns, 7953 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1893 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 690 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   21          -    0.22222      -     -    0s
+     0     0    0.22222    0  257          -    0.22222      -     -    0s
+     0     0    0.22222    0  255          -    0.22222      -     -    0s
+     0     0    0.22222    0   36          -    0.22222      -     -    0s
+     0     0    0.22222    0   24          -    0.22222      -     -    1s
+     0     0    0.22222    0   24          -    0.22222      -     -    1s
+     0     2    0.22222    0   24          -    0.22222      -     -    1s
+*  384   373             171       9.8888889    0.22222  97.8%  46.0    3s
+H  413   402                       4.2222222    0.22222  94.7%  45.1    3s
+H  456   164                       0.2222222    0.22222  0.00%  49.8    3s
+
+Cutting planes:
+  Gomory: 23
+  Cover: 80
+  Implied bound: 9
+  Clique: 20
+  MIR: 15
+  Flow cover: 5
+  Zero half: 17
+  RLT: 17
+  Relax-and-lift: 14
+
+Explored 487 nodes (29768 simplex iterations) in 3.37 seconds (1.36 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 0.222222 4.22222 9.88889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 14.0
+u1_3 14.0
+u1_4 15.0
+u1_5 15.0
+FCFS 58.699999999999996 25.557159090909092 97 0.032975196838378906
+our 65.69999999999999 27.791704545454547 104
+our1 58.699999999999996 24.580909090909092 97
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x65e4a0e6
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 929 rows and 4824 columns
+Presolve time: 0.37s
+Presolved: 2536 rows, 1894 columns, 7955 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 718 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   25          -    0.22222      -     -    0s
+     0     0    0.22222    0  179          -    0.22222      -     -    0s
+     0     0    0.22222    0  184          -    0.22222      -     -    0s
+     0     0    0.22222    0   24          -    0.22222      -     -    0s
+H    0     0                       8.2222222    0.22222  97.3%     -    0s
+     0     0    0.22222    0   24    8.22222    0.22222  97.3%     -    0s
+H    0     0                       4.8888889    0.22222  95.5%     -    0s
+     0     0    0.22222    0   42    4.88889    0.22222  95.5%     -    0s
+     0     0    0.22222    0   40    4.88889    0.22222  95.5%     -    0s
+     0     0    0.22222    0   46    4.88889    0.22222  95.5%     -    0s
+     0     0    0.22222    0   27    4.88889    0.22222  95.5%     -    0s
+     0     0    0.22222    0   27    4.88889    0.22222  95.5%     -    0s
+     0     2    0.22222    0   27    4.88889    0.22222  95.5%     -    1s
+H   73    93                       1.8888889    0.22222  88.2%  12.3    1s
+H  377   380                       0.5555556    0.22222  60.0%  52.6    3s
+H  726     4                       0.2222222    0.22222  0.00%  72.5    4s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 27
+  Cover: 54
+  Implied bound: 59
+  Clique: 15
+  MIR: 16
+  Flow cover: 9
+  GUB cover: 4
+  Zero half: 20
+  Network: 1
+  RLT: 16
+  Relax-and-lift: 26
+  PSD: 7
+
+Explored 726 nodes (57092 simplex iterations) in 4.64 seconds (1.90 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 0.555556 1.88889 ... 8.22222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.000000000000004
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 13.999999999999996
+FCFS 77.51000000000002 30.980795454545458 112.09 0.043630123138427734
+our 77.51000000000002 30.498295454545456 112.09
+our1 70.69999999999999 25.639318181818183 109
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x6bf21513
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 925 rows and 4824 columns
+Presolve time: 0.38s
+Presolved: 2540 rows, 1894 columns, 7965 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 681 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  301          -    0.22222      -     -    0s
+     0     0    0.22222    0  284          -    0.22222      -     -    0s
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   31          -    0.22222      -     -    0s
+     0     0    0.22222    0   31          -    0.22222      -     -    0s
+     0     2    0.22222    0   31          -    0.22222      -     -    0s
+*  351   371             147      11.5555556    0.22222  98.1%  24.2    2s
+H  410   390                       8.8888889    0.22222  97.5%  35.5    2s
+H  451   415                       3.8888889    0.22222  94.3%  36.5    2s
+   821   553    0.22222   54  496    3.88889    0.22222  94.3%  37.4    5s
+H  860   544                       1.8888889    0.22222  88.2%  55.5    6s
+H  902   540                       0.8888889    0.22222  75.0%  63.8    6s
+H  950   536                       0.2222222    0.22222  0.00%  73.8    7s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 68
+  Cover: 154
+  Implied bound: 119
+  Projected implied bound: 3
+  Clique: 92
+  MIR: 96
+  StrongCG: 28
+  Flow cover: 185
+  GUB cover: 4
+  Zero half: 83
+  Network: 10
+  RLT: 20
+  Relax-and-lift: 132
+  BQP: 1
+  PSD: 8
+
+Explored 983 nodes (80231 simplex iterations) in 7.41 seconds (2.79 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: 0.222222 0.888889 1.88889 ... 11.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 14.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 15.0
+FCFS 76.13 29.579886363636366 116 0.03188896179199219
+our 66.13 26.96102272727273 106
+our1 75.13 26.971477272727274 115
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x9e8094c3
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 927 rows and 4820 columns
+Presolve time: 0.35s
+Presolved: 2538 rows, 1898 columns, 7953 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1896 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 652 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  299          -    0.22222      -     -    0s
+     0     0    0.22222    0  291          -    0.22222      -     -    0s
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+H    0     0                       9.2222222    0.22222  97.6%     -    0s
+     0     0    0.22222    0   20    9.22222    0.22222  97.6%     -    0s
+H    0     0                       7.2222222    0.22222  96.9%     -    0s
+     0     0    0.22222    0   49    7.22222    0.22222  96.9%     -    0s
+     0     0    0.22222    0   26    7.22222    0.22222  96.9%     -    0s
+     0     0    0.22222    0   26    7.22222    0.22222  96.9%     -    0s
+H    0     0                       4.5555556    0.22222  95.1%     -    0s
+     0     2    0.22222    0   26    4.55556    0.22222  95.1%     -    0s
+H   57    58                       4.2222222    0.22222  94.7%   141    1s
+H   66    58                       3.2222222    0.22222  93.1%   144    1s
+H   93   126                       0.8888889    0.22222  75.0%   125    1s
+H  152   118                       0.5555556    0.22222  60.0%  96.6    2s
+H  349   128                       0.2222222    0.22222  0.00%   183    4s
+
+Cutting planes:
+  Learned: 3
+  Gomory: 40
+  Cover: 251
+  Implied bound: 115
+  Clique: 42
+  MIR: 38
+  StrongCG: 1
+  Flow cover: 22
+  GUB cover: 8
+  Zero half: 54
+  Network: 3
+  RLT: 25
+  Relax-and-lift: 29
+
+Explored 448 nodes (82678 simplex iterations) in 4.37 seconds (2.38 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 8: 0.222222 0.555556 0.888889 ... 9.22222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 14.0
+u1_3 14.0
+u1_4 15.0
+u1_5 15.0
+FCFS 55.42 22.972840909090912 94 0.032846927642822266
+our 58.699999999999996 24.60318181818182 97
+our1 63.92 24.336136363636363 95
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xf0baf64a
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 933 rows and 4825 columns
+Presolve time: 0.29s
+Presolved: 2532 rows, 1893 columns, 7939 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1891 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 654 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0   87          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   34          -    0.22222      -     -    0s
+     0     0    0.22222    0   63          -    0.22222      -     -    0s
+     0     0    0.22222    0   78          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     2    0.22222    0   28          -    0.22222      -     -    0s
+*  363   333             151       5.8888889    0.22222  96.2%  47.2    2s
+H  808    10                       0.2222222    0.22222  0.00%  36.8    3s
+
+Cutting planes:
+  Gomory: 11
+  Cover: 44
+  Implied bound: 3
+  Clique: 2
+  MIR: 14
+  Flow cover: 5
+  GUB cover: 1
+  Zero half: 9
+  Network: 1
+  RLT: 20
+  Relax-and-lift: 3
+
+Explored 808 nodes (33065 simplex iterations) in 3.20 seconds (1.52 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0.222222 5.88889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 15.0
+u1_5 14.0
+FCFS 73.22 30.855909090909094 113.09 0.021558046340942383
+our 76.78999999999999 29.794204545454548 114.09
+our1 70.69999999999999 26.554545454545455 108
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x098da434
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 931 rows and 4825 columns
+Presolve time: 0.28s
+Presolved: 2534 rows, 1893 columns, 7948 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1891 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 806 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      28.5555556    0.22222  99.2%     -    0s
+     0     0    0.22222    0  141   28.55556    0.22222  99.2%     -    0s
+     0     0    0.22222    0  133   28.55556    0.22222  99.2%     -    0s
+H    0     0                      19.5555556    0.22222  98.9%     -    0s
+     0     0    0.22222    0   23   19.55556    0.22222  98.9%     -    0s
+     0     0    0.22222    0   69   19.55556    0.22222  98.9%     -    0s
+     0     0    0.22222    0   31   19.55556    0.22222  98.9%     -    0s
+     0     0    0.22222    0   31   19.55556    0.22222  98.9%     -    0s
+H    0     0                       4.2222222    0.22222  94.7%     -    0s
+     0     2    0.22222    0   31    4.22222    0.22222  94.7%     -    0s
+H   44    46                       2.8888889    0.22222  92.3%  12.4    0s
+H  173   169                       2.5555556    0.22222  91.3%  42.0    1s
+H  213   174                       1.2222222    0.22222  81.8%   106    1s
+H  348   152                       0.2222222    0.22222  0.00%  87.9    2s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 25
+  Cover: 95
+  Implied bound: 13
+  Clique: 1
+  MIR: 29
+  StrongCG: 1
+  Flow cover: 14
+  GUB cover: 6
+  Zero half: 38
+  RLT: 16
+  Relax-and-lift: 24
+  PSD: 10
+
+Explored 415 nodes (42668 simplex iterations) in 2.83 seconds (1.67 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 0.222222 1.22222 2.55556 ... 28.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 68.42 24.928977272727273 108 0.021045923233032227
+our 70.69999999999999 25.50511363636364 110
+our1 62.42000000000001 25.03443181818182 101
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x86787f5e
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 932 rows and 4822 columns
+Presolve time: 0.26s
+Presolved: 2533 rows, 1896 columns, 7943 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1894 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 602 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  331          -    0.22222      -     -    0s
+     0     0    0.22222    0  340          -    0.22222      -     -    0s
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      11.5555556    0.22222  98.1%     -    0s
+     0     0    0.22222    0   23   11.55556    0.22222  98.1%     -    0s
+     0     0    0.22222    0   23   11.55556    0.22222  98.1%     -    0s
+     0     2    0.22222    0   23   11.55556    0.22222  98.1%     -    0s
+H   29    30                       4.2222222    0.22222  94.7%   9.2    0s
+H   60    71                       3.2222222    0.22222  93.1%  21.6    0s
+H  145   187                       2.2222222    0.22222  90.0%   147    2s
+H  222   263                       0.8888889    0.22222  75.0%   135    2s
+H  355   119                       0.2222222    0.22222  0.00%   154    3s
+
+Cutting planes:
+  Gomory: 46
+  Cover: 128
+  Implied bound: 41
+  Clique: 41
+  MIR: 55
+  StrongCG: 4
+  Flow cover: 26
+  GUB cover: 6
+  Zero half: 42
+  Network: 1
+  RLT: 28
+  Relax-and-lift: 31
+
+Explored 370 nodes (61718 simplex iterations) in 3.07 seconds (2.10 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 6: 0.222222 0.888889 2.22222 ... 11.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 15.000000000000005
+u1_2 15.0
+u1_3 14.0
+u1_4 15.0
+u1_5 15.0
+FCFS 75.69999999999999 31.10068181818182 114 0.0184481143951416
+our 77.69999999999999 30.538636363636364 116
+our1 75.69999999999999 29.07625 114
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x1b4883b2
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 933 rows and 4820 columns
+Presolve time: 0.34s
+Presolved: 2532 rows, 1898 columns, 7936 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1896 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 648 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  278          -    0.22222      -     -    0s
+H    0     0                      18.5555556    0.22222  98.8%     -    0s
+     0     0    0.22222    0   33   18.55556    0.22222  98.8%     -    0s
+     0     0    0.22222    0   24   18.55556    0.22222  98.8%     -    0s
+     0     0    0.22222    0   24   18.55556    0.22222  98.8%     -    0s
+H    0     0                       0.5555556    0.22222  60.0%     -    0s
+     0     2    0.22222    0   24    0.55556    0.22222  60.0%     -    0s
+H  211   117                       0.2222222    0.22222  0.00%   116    2s
+
+Cutting planes:
+  Gomory: 37
+  Cover: 142
+  Implied bound: 23
+  Clique: 28
+  MIR: 47
+  Flow cover: 20
+  GUB cover: 9
+  Zero half: 26
+  RLT: 20
+  Relax-and-lift: 24
+
+Explored 236 nodes (42532 simplex iterations) in 2.79 seconds (1.50 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 0.222222 0.555556 18.5556 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 72.69999999999999 30.535113636363636 111 0.023753881454467773
+our 70.78 29.762386363636363 108
+our1 70.69999999999999 27.086136363636363 109
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xc1fd840e
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 921 rows and 4819 columns
+Presolve time: 0.27s
+Presolved: 2544 rows, 1899 columns, 7966 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1897 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 674 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  294          -    0.22222      -     -    0s
+     0     0    0.22222    0  290          -    0.22222      -     -    0s
+     0     0    0.22222    0   24          -    0.22222      -     -    0s
+H    0     0                      77.2222222    0.22222   100%     -    0s
+     0     0    0.22222    0   32   77.22222    0.22222   100%     -    0s
+     0     0    0.22222    0   32   77.22222    0.22222   100%     -    0s
+     0     0    0.22222    0   32   77.22222    0.22222   100%     -    0s
+     0     2    0.22222    0   32   77.22222    0.22222   100%     -    0s
+H   29    31                      16.2222222    0.22222  98.6%  92.6    0s
+H   80   113                      10.8888889    0.22222  98.0%  78.3    1s
+H  114   154                       8.2222222    0.22222  97.3%  66.1    1s
+H  187   199                       0.2222222    0.22222  0.00%  80.9    1s
+
+Cutting planes:
+  Gomory: 45
+  Cover: 92
+  Implied bound: 55
+  Clique: 54
+  MIR: 47
+  StrongCG: 3
+  Flow cover: 22
+  GUB cover: 6
+  Zero half: 43
+  Network: 2
+  RLT: 28
+  Relax-and-lift: 43
+
+Explored 270 nodes (23610 simplex iterations) in 1.74 seconds (1.08 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 8.22222 10.8889 ... 77.2222
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 14.0
+FCFS 58.699999999999996 29.47409090909091 97 0.029178142547607422
+our 57.79 30.019545454545458 97.09
+our1 58.699999999999996 21.16977272727273 97
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x8ca1d43a
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 913 rows and 4816 columns
+Presolve time: 0.27s
+Presolved: 2552 rows, 1902 columns, 7993 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1900 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 680 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      31.8888889    0.22222  99.3%     -    0s
+     0     0    0.22222    0  112   31.88889    0.22222  99.3%     -    0s
+H    0     0                       4.2222222    0.22222  94.7%     -    0s
+     0     0    0.22222    0   25    4.22222    0.22222  94.7%     -    0s
+     0     0    0.22222    0   34    4.22222    0.22222  94.7%     -    0s
+     0     0    0.22222    0   40    4.22222    0.22222  94.7%     -    0s
+     0     0    0.22222    0   30    4.22222    0.22222  94.7%     -    0s
+     0     0    0.22222    0   30    4.22222    0.22222  94.7%     -    0s
+     0     2    0.22222    0   30    4.22222    0.22222  94.7%     -    0s
+H   34    49                       2.5555556    0.22222  91.3%  22.4    1s
+H  151   143                       1.5555556    0.22222  85.7%   139    1s
+H  194   147                       0.8888889    0.22222  75.0%   167    2s
+   371   369    0.22222   29  368    0.88889    0.22222  75.0%   234    5s
+H  466   369                       0.5555556    0.22222  60.0%   209    5s
+H  967   568                       0.2222222    0.22222  0.00%   160    8s
+
+Cutting planes:
+  Learned: 2
+  Gomory: 104
+  Cover: 110
+  Implied bound: 69
+  Projected implied bound: 13
+  Clique: 50
+  MIR: 84
+  StrongCG: 29
+  Flow cover: 170
+  GUB cover: 3
+  Zero half: 78
+  Network: 4
+  RLT: 26
+  Relax-and-lift: 56
+  PSD: 5
+
+Explored 972 nodes (159742 simplex iterations) in 8.04 seconds (5.11 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 0.222222 0.555556 0.888889 ... 31.8889
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 14.0
+u1_3 15.0
+u1_4 14.0
+u1_5 15.0
+FCFS 72.31 32.05431818181818 109 0.020013093948364258
+our 59.31 28.618295454545457 96
+our1 72.31 29.16284090909091 109
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0xc202350c
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 921 rows and 4821 columns
+Presolve time: 0.29s
+Presolved: 2544 rows, 1897 columns, 7975 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1895 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 703 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  259          -    0.22222      -     -    0s
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+H    0     0                      27.8888889    0.22222  99.2%     -    0s
+     0     0    0.22222    0   21   27.88889    0.22222  99.2%     -    0s
+     0     0    0.22222    0   21   27.88889    0.22222  99.2%     -    0s
+H    0     2                       3.8888889    0.22222  94.3%     -    0s
+     0     2    0.22222    0   21    3.88889    0.22222  94.3%     -    0s
+H   59    85                       2.5555556    0.22222  91.3%  50.1    1s
+H  136   185                       0.2222222    0.22222  0.00%  63.4    1s
+
+Cutting planes:
+  Gomory: 37
+  Cover: 93
+  Implied bound: 16
+  Clique: 24
+  MIR: 31
+  Flow cover: 20
+  GUB cover: 4
+  Zero half: 14
+  Network: 1
+  RLT: 23
+  Relax-and-lift: 21
+
+Explored 217 nodes (18121 simplex iterations) in 1.81 seconds (0.90 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 4: 0.222222 2.55556 3.88889 27.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 14.999999999999998
+u1_2 14.0
+u1_3 15.0
+u1_4 15.0
+u1_5 14.0
+FCFS 72.22 29.312045454545455 112.09 0.02294182777404785
+our 76.13 30.11477272727273 116
+our1 64.13 24.128636363636364 104
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x5c0bba0f
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 918 rows and 4818 columns
+Presolve time: 0.26s
+Presolved: 2547 rows, 1900 columns, 7977 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1898 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 677 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  314          -    0.22222      -     -    0s
+     0     0    0.22222    0  314          -    0.22222      -     -    0s
+     0     0    0.22222    0  297          -    0.22222      -     -    0s
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+H    0     0                      37.8888889    0.22222  99.4%     -    0s
+     0     0    0.22222    0   27   37.88889    0.22222  99.4%     -    0s
+     0     0    0.22222    0   27   37.88889    0.22222  99.4%     -    0s
+     0     0    0.22222    0   27   37.88889    0.22222  99.4%     -    0s
+H    0     0                      14.8888889    0.22222  98.5%     -    0s
+     0     2    0.22222    0   27   14.88889    0.22222  98.5%     -    0s
+H   31    37                       4.5555556    0.22222  95.1%  26.1    0s
+H   58    96                       2.8888889    0.22222  92.3%  46.1    0s
+H  201   133                       0.2222222    0.22222  0.00%  40.5    1s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 37
+  Cover: 90
+  Implied bound: 38
+  Clique: 51
+  MIR: 34
+  StrongCG: 2
+  Flow cover: 16
+  GUB cover: 4
+  Zero half: 23
+  Network: 1
+  RLT: 18
+  Relax-and-lift: 33
+
+Explored 242 nodes (18909 simplex iterations) in 1.49 seconds (0.80 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 5: 0.222222 2.88889 4.55556 ... 37.8889
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 14.0
+u1_2 14.0
+u1_3 15.0
+u1_4 15.0
+u1_5 15.0
+FCFS 69.69999999999999 26.46 108 0.021181106567382812
+our 61.699999999999996 23.97318181818182 100
+our1 68.69999999999999 23.25340909090909 107
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x44e737c8
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 923 rows and 4823 columns
+Presolve time: 0.33s
+Presolved: 2542 rows, 1895 columns, 7966 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1893 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 647 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   26          -    0.22222      -     -    0s
+     0     0    0.22222    0  133          -    0.22222      -     -    0s
+     0     0    0.22222    0   31          -    0.22222      -     -    0s
+     0     0    0.22222    0   34          -    0.22222      -     -    0s
+     0     0    0.22222    0   47          -    0.22222      -     -    0s
+     0     0    0.22222    0   44          -    0.22222      -     -    0s
+     0     0    0.22222    0   42          -    0.22222      -     -    0s
+H    0     0                       7.8888889    0.22222  97.2%     -    0s
+     0     2    0.22222    0   42    7.88889    0.22222  97.2%     -    0s
+H   32    41                       0.2222222    0.22222  0.00%  37.4    1s
+
+Cutting planes:
+  Gomory: 25
+  Cover: 48
+  Implied bound: 1
+  Clique: 1
+  MIR: 16
+  Flow cover: 14
+  Zero half: 18
+  RLT: 27
+  Relax-and-lift: 2
+
+Explored 42 nodes (5102 simplex iterations) in 1.11 seconds (0.46 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 2: 0.222222 7.88889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 14.0
+u1_2 15.000000000000277
+u1_3 15.0
+u1_4 14.999999999999723
+u1_5 15.0
+FCFS 79.13 29.778636363636366 119 0.023736238479614258
+our 72.13 25.94818181818182 112
+our1 63.699999999999996 28.26727272727273 102
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x5574d485
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 929 rows and 4824 columns
+Presolve time: 0.35s
+Presolved: 2536 rows, 1894 columns, 7956 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1892 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 629 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   21          -    0.22222      -     -    0s
+     0     0    0.22222    0  244          -    0.22222      -     -    0s
+     0     0    0.22222    0   23          -    0.22222      -     -    0s
+H    0     0                      18.8888889    0.22222  98.8%     -    0s
+     0     0    0.22222    0   28   18.88889    0.22222  98.8%     -    0s
+     0     0    0.22222    0   28   18.88889    0.22222  98.8%     -    0s
+     0     2    0.22222    0   28   18.88889    0.22222  98.8%     -    0s
+H   80    80                       3.5555556    0.22222  93.7%   227    1s
+H  218   185                       0.2222222    0.22222  0.00%   146    2s
+
+Cutting planes:
+  Gomory: 47
+  Cover: 103
+  Implied bound: 22
+  Clique: 23
+  MIR: 45
+  StrongCG: 2
+  Flow cover: 16
+  GUB cover: 7
+  Zero half: 35
+  RLT: 14
+  Relax-and-lift: 24
+  PSD: 14
+
+Explored 219 nodes (35258 simplex iterations) in 2.65 seconds (1.21 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 0.222222 3.55556 18.8889 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 14.0
+u1_2 15.0
+u1_3 15.0
+u1_4 15.0
+u1_5 15.0
+FCFS 86.13 32.84920454545455 126 0.029633760452270508
+our 75.13 30.555795454545457 115
+our1 74.69999999999999 30.6 113
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x1d426e24
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 928 rows and 4826 columns
+Presolve time: 0.32s
+Presolved: 2537 rows, 1892 columns, 7957 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1890 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 660 iterations, 0.01 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0  261          -    0.22222      -     -    0s
+     0     0    0.22222    0  257          -    0.22222      -     -    0s
+     0     0    0.22222    0   33          -    0.22222      -     -    0s
+     0     0    0.22222    0   29          -    0.22222      -     -    0s
+     0     0    0.22222    0   29          -    0.22222      -     -    0s
+H    0     0                      62.5555556    0.22222   100%     -    0s
+H    0     0                      23.8888889    0.22222  99.1%     -    0s
+     0     2    0.22222    0   29   23.88889    0.22222  99.1%     -    0s
+H  103   125                      16.5555556    0.22222  98.7%  27.2    1s
+H  130   215                       5.5555556    0.22222  96.0%  25.2    1s
+H  293   212                       5.2222222    0.22222  95.7%  48.3    2s
+H  388   264                       0.8888889    0.22222  75.0%  82.6    3s
+   620   420     cutoff   62         0.88889    0.22222  75.0%   109    5s
+   848   462    0.22222   20  318    0.88889    0.22222  75.0%   170   10s
+H  946   433                       0.2222222    0.22222  0.00%   191   11s
+
+Cutting planes:
+  Learned: 1
+  Gomory: 144
+  Cover: 127
+  Implied bound: 67
+  Projected implied bound: 5
+  Clique: 40
+  MIR: 114
+  StrongCG: 32
+  Flow cover: 225
+  GUB cover: 7
+  Zero half: 106
+  Network: 3
+  RLT: 14
+  Relax-and-lift: 46
+  PSD: 5
+
+Explored 961 nodes (187303 simplex iterations) in 11.51 seconds (5.54 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 7: 0.222222 0.888889 5.22222 ... 62.5556
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 15.0
+u1_1 15.0
+u1_2 15.0
+u1_3 14.0
+u1_4 15.0
+u1_5 14.0
+FCFS 60.13 27.538977272727273 100 0.02846813201904297
+our 62.13 28.15034090909091 102
+our1 71.56 27.115568181818183 103
+Set parameter Method to value 0
+Set parameter NonConvex to value 2
+[[[1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 0. 1.]
+  [0. 0. 0. 1.]]
+
+ [[0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 0. 1. 1.]
+  [0. 0. 1. 1.]]
+
+ [[0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]]
+
+ [[0. 0. 0. 1.]
+  [0. 0. 1. 1.]
+  [0. 1. 1. 1.]
+  [0. 1. 1. 1.]
+  [1. 1. 1. 1.]
+  [1. 1. 1. 1.]]]
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (mac64[x86])
+
+CPU model: Intel(R) Core(TM) i7-7567U CPU @ 3.50GHz
+Thread count: 2 physical cores, 4 logical processors, using up to 4 threads
+
+Optimize a model with 3385 rows, 6697 columns and 5498 nonzeros
+Model fingerprint: 0x1051e94f
+Model has 2 quadratic constraints
+Model has 6424 general constraints
+Variable types: 2 continuous, 6695 integer (3520 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+00]
+  QMatrix range    [3e-02, 2e-01]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+01]
+  RHS range        [2e-01, 5e+00]
+  GenCon rhs range [1e+00, 1e+00]
+  GenCon coe range [1e+00, 1e+00]
+Presolve removed 920 rows and 4819 columns
+Presolve time: 0.25s
+Presolved: 2545 rows, 1899 columns, 7974 nonzeros
+Presolved model has 21 bilinear constraint(s)
+Variable types: 2 continuous, 1897 integer (872 binary)
+
+Root relaxation: objective 2.222222e-01, 715 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.22222    0   22          -    0.22222      -     -    0s
+     0     0    0.22222    0   83          -    0.22222      -     -    0s
+     0     0    0.22222    0  122          -    0.22222      -     -    0s
+     0     0    0.22222    0   28          -    0.22222      -     -    0s
+     0     0    0.22222    0   37          -    0.22222      -     -    0s
+     0     0    0.22222    0   32          -    0.22222      -     -    0s
+     0     0    0.22222    0   52          -    0.22222      -     -    0s
+     0     0    0.22222    0   38          -    0.22222      -     -    0s
+     0     0    0.22222    0   36          -    0.22222      -     -    0s
+H    0     0                       8.5555556    0.22222  97.4%     -    0s
+     0     2    0.22222    0   36    8.55556    0.22222  97.4%     -    0s
+H   29    47                       0.5555556    0.22222  60.0%  29.7    1s
+H   57    76                       0.2222222    0.22222  0.00%  20.8    1s
+
+Cutting planes:
+  Gomory: 19
+  Cover: 51
+  Implied bound: 4
+  Clique: 1
+  MIR: 22
+  Flow cover: 7
+  GUB cover: 1
+  Zero half: 19
+  Network: 1
+  RLT: 23
+  Relax-and-lift: 3
+
+Explored 81 nodes (6442 simplex iterations) in 1.28 seconds (0.53 work units)
+Thread count was 4 (of 4 available processors)
+
+Solution count 3: 0.222222 0.555556 8.55556 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.222222222222e-01, best bound 2.222222222222e-01, gap 0.0000%
+Warning: Q constraint 0 doesn't have a name
+Obj: 0.222222
+u1_0 14.0
+u1_1 15.0
+u1_2 15.0
+u1_3 15.0
+u1_4 14.0
+u1_5 15.0
+FCFS 84.69999999999999 33.03488636363637 123 0.031687259674072266
+our 73.69999999999999 29.199545454545454 113
+our1 84.69999999999999 33.92329545454545 123
+min 55.42 53.699999999999996 55.699999999999996 22.972840909090912 23.217386363636365 20.155 94 93 94 3.5670990546544394 0.026885588963826496 0.02910630702972412
