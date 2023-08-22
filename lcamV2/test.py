@@ -5,7 +5,7 @@ import random,copy
 time = 0
 decision_point = 20
 lane_len = 80
-Tc = 4
+Tc = 2
 output = []
 tempout = []
 passing_count = 0
